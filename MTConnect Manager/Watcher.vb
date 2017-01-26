@@ -21,7 +21,8 @@ Public Class Watcher
         Dim myXML As New XmlDocument
         myXML.Load(My.Settings.StartUp & "\XML\Watch_Sessions.xml")
 
-        Dim watchcnt As Integer = 0
+
+    Dim watchcnt As Integer = 0
         Dim NAME, PORT, RATE, TYPE, FILE, ACTION As String
         Dim wi As New List(Of WatchItem)
         For Each WATCH As XmlElement In myXML.SelectSingleNode("sessions").ChildNodes
