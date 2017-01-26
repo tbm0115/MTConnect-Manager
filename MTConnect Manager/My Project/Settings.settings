@@ -1,0 +1,45 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="StartUp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Trais\Documents\Visual Studio 2010\Projects\MTConnect Manager\MTConnect Manager</Value>
+    </Setting>
+    <Setting Name="ControlColumns" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="ATTENTION" Type="System.Media.SoundPlayer" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="intSemiSuspend" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="strTimerResume" Type="System.String" Scope="User">
+      <Value Profile="(Default)">7:00 AM</Value>
+    </Setting>
+    <Setting Name="intDefRefresh" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2000</Value>
+    </Setting>
+    <Setting Name="intDefOutMeth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="strDefDatFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Value>
+    </Setting>
+    <Setting Name="intMaxRec" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="blnRptOEEHTML" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="strRptOEEHTML" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="intMaxRefresh" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">60000</Value>
+    </Setting>
+    <Setting Name="intMinRefresh" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

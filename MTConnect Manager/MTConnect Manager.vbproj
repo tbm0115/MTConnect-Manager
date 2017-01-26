@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D50FB6BD-4C71-4BCB-BB0A-25CA9FB534DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MTConnect_Manager.My.MyApplication</StartupObject>
+    <RootNamespace>MTConnect_Manager</RootNamespace>
+    <AssemblyName>MTConnect Manager</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\server\share\systems database\MTConnect\MTConnect Manager\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>MTConnect Manager</ProductName>
+    <PublisherName>Irongate Machine Inc</PublisherName>
+    <SuiteName>Machine Monitor</SuiteName>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.1.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MTConnect Manager.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MTConnect Manager.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MTConnect Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A334031A334AC3002FF03C30EC3B9EC0BBA07B78</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MTConnect Manager_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HTML">
+      <HintPath>..\..\HTML Writer\HTML Writer\bin\Release\HTML.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrative Settings.Designer.vb">
+      <DependentUpon>Administrative Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="MDI Forms\Dial View.Designer.vb">
+      <DependentUpon>Dial View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\Dial View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Load Probes.Designer.vb">
+      <DependentUpon>Load Probes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Load Probes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Local Functions.vb" />
+    <Compile Include="MDI Forms\Dialogs\Dial190_Add.Designer.vb">
+      <DependentUpon>Dial190_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\Dial190_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\Dial190_Remove.Designer.vb">
+      <DependentUpon>Dial190_Remove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\Dial190_Remove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\OEE_Add.Designer.vb">
+      <DependentUpon>OEE_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\OEE_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\OEE_Remove.Designer.vb">
+      <DependentUpon>OEE_Remove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\OEE_Remove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\Reporting\OEE Report.Designer.vb">
+      <DependentUpon>OEE Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\Reporting\OEE Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\SelectDate.Designer.vb">
+      <DependentUpon>SelectDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\SelectDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\Status_Add.Designer.vb">
+      <DependentUpon>Status_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\Status_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\Status_Remove.Designer.vb">
+      <DependentUpon>Status_Remove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\Status_Remove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\OEE View.Designer.vb">
+      <DependentUpon>OEE View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\OEE View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\Status View.Designer.vb">
+      <DependentUpon>Status View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\Status View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\User Controls\Dial-190.Designer.vb">
+      <DependentUpon>Dial-190.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\User Controls\Dial-190.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\User Controls\OEE.Designer.vb">
+      <DependentUpon>OEE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\User Controls\OEE.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\User Controls\ProbeDataType.Designer.vb">
+      <DependentUpon>ProbeDataType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\User Controls\ProbeDataType.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\User Controls\Status Indicator.Designer.vb">
+      <DependentUpon>Status Indicator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\User Controls\Status Indicator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Watcher Dialogs\AddWatch.Designer.vb">
+      <DependentUpon>AddWatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Watcher Dialogs\AddWatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\Dashboard_Real-Time Graph.Designer.vb">
+      <DependentUpon>Dashboard_Real-Time Graph.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\Dashboard_Real-Time Graph.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\Real-Time Graph_Add Series.Designer.vb">
+      <DependentUpon>Real-Time Graph_Add Series.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\Real-Time Graph_Add Series.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\Real-Time Graph_Remove Series.Designer.vb">
+      <DependentUpon>Real-Time Graph_Remove Series.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Forms\Dialogs\Real-Time Graph_Remove Series.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SelectView.Designer.vb">
+      <DependentUpon>SelectView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meter_Dial.Designer.vb">
+      <DependentUpon>Meter_Dial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Meter_Dial.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Watcher Dialogs\RemoveWatch.Designer.vb">
+      <DependentUpon>RemoveWatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Watcher Dialogs\RemoveWatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Watcher.Designer.vb">
+      <DependentUpon>Watcher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Watcher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Administrative Settings.resx">
+      <DependentUpon>Administrative Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\Dial View.resx">
+      <DependentUpon>Dial View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Load Probes.resx">
+      <DependentUpon>Load Probes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\Dialogs\Dial190_Add.resx">
+      <DependentUpon>Dial190_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\Dialogs\Dial190_Remove.resx">
+      <DependentUpon>Dial190_Remove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\Dialogs\OEE_Add.resx">
+      <DependentUpon>OEE_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\Dialogs\OEE_Remove.resx">
+      <DependentUpon>OEE_Remove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\Dialogs\Real-Time Graph_Add Series.resx">
+      <DependentUpon>Real-Time Graph_Add Series.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\Dialogs\Real-Time Graph_Remove Series.resx">
+      <DependentUpon>Real-Time Graph_Remove Series.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\Dialogs\Reporting\OEE Report.resx">
+      <DependentUpon>OEE Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\Dialogs\SelectDate.resx">
+      <DependentUpon>SelectDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\Dialogs\Status_Add.resx">
+      <DependentUpon>Status_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\Dialogs\Status_Remove.resx">
+      <DependentUpon>Status_Remove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\OEE View.resx">
+      <DependentUpon>OEE View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\Status View.resx">
+      <DependentUpon>Status View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\User Controls\Dial-190.resx">
+      <DependentUpon>Dial-190.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\User Controls\OEE.resx">
+      <DependentUpon>OEE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\User Controls\ProbeDataType.resx">
+      <DependentUpon>ProbeDataType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\User Controls\Status Indicator.resx">
+      <DependentUpon>Status Indicator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Watcher Dialogs\AddWatch.resx">
+      <DependentUpon>AddWatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Forms\Dashboard_Real-Time Graph.resx">
+      <DependentUpon>Dashboard_Real-Time Graph.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectView.resx">
+      <DependentUpon>SelectView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meter_Dial.resx">
+      <DependentUpon>Meter_Dial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Watcher Dialogs\RemoveWatch.resx">
+      <DependentUpon>RemoveWatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Watcher.resx">
+      <DependentUpon>Watcher.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="MTConnect Manager_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Irongate_Logo_Icon.ico" />
+    <None Include="Resources\Logo-Final2.jpg" />
+    <None Include="Resources\Dial-190.png" />
+    <Content Include="MTConnect Icon.ico" />
+    <Content Include="Resources\Meter_Dial_SpriteSheet.png" />
+    <None Include="Resources\Status Indicator.png" />
+    <None Include="Resources\OEE.png" />
+    <None Include="Resources\OOT_Navi_Hey1.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="XML\Dashboard_Sessions.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML\Probe_Data-Types.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML\Watch_Sessions.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

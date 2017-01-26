@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sessions>
+  <watch>
+    <name>mazatrol-pc</name>
+    <port>5000</port>
+    <rate>500</rate>
+    <output type="mdb">
+      <file>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</file>
+      <action>QTN250MSY</action>
+    </output>
+  </watch>
+</sessions>

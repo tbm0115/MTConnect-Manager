@@ -1,0 +1,2 @@
+1/26/2017 12:40:34 PM - (ApplicationEvents)[Startup]	Could not find a part of the path 'C:\Users\Trais\Documents\Visual Studio 2010\Projects\MTConnect Manager\MTConnect Manager\XML\XML\Watch_Sessions.xml'.
+1/26/2017 12:41:09 PM - (ApplicationEvents)[Startup]	Could not find a part of the path 'C:\Users\Trais\Documents\Visual Studio 2010\Projects\MTConnect Manager\MTConnect Manager\XML\XML\Watch_Sessions.xml'.

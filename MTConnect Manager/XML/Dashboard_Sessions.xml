@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dashboard>
+ <MDI type="DIAL190">
+    <Dial190>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>Sovr</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Minimum>0</Minimum>
+      <Maximum>100</Maximum>
+      <ErrorProc></ErrorProc>
+      <ErrorArgs></ErrorArgs>
+      <Attention>
+        <Value operator="lessthan" msg="Less than Zero Error">0</Value>
+        <Value operator="equalto" msg="Test">50</Value>
+        <Value operator="greaterthan" msg="Greater than 100 Error">100</Value>
+      </Attention>
+    </Dial190>
+    <Dial190>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>Fovr</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Minimum>0</Minimum>
+      <Maximum>100</Maximum>
+      <ErrorProc></ErrorProc>
+      <ErrorArgs></ErrorArgs>
+      <Attention>
+        <Value operator="lessthan" msg="Less than Zero Error">0</Value>
+        <Value operator="equalto" msg="Test">50</Value>
+        <Value operator="greaterthan" msg="Greater than 100 Error">100</Value>
+      </Attention>
+    </Dial190>
+    <Dial190>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>Frapidovr</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Minimum>0</Minimum>
+      <Maximum>100</Maximum>
+      <ErrorProc></ErrorProc>
+      <ErrorArgs></ErrorArgs>
+      <Attention>
+        <Value operator="lessthan" msg="Less than Zero Error">0</Value>
+        <Value operator="equalto" msg="Test">50</Value>
+        <Value operator="greaterthan" msg="Greater than 100 Error">100</Value>
+      </Attention>
+    </Dial190>
+  </MDI>
+  <MDI type="DIAL190">
+    <Dial190>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>Xfrt</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Minimum>0</Minimum>
+      <Maximum>100</Maximum>
+      <ErrorProc></ErrorProc>
+      <ErrorArgs></ErrorArgs>
+      <Attention>
+        <Value operator="lessthan" msg="Less than Zero Error">5</Value>
+        <Value operator="equalto" msg=""></Value>
+        <Value operator="greaterthan" msg="Greater than 100 Error">100</Value>
+      </Attention>
+    </Dial190>
+    <Dial190>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>Yfrt</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Minimum>0</Minimum>
+      <Maximum>100</Maximum>
+      <ErrorProc></ErrorProc>
+      <ErrorArgs></ErrorArgs>
+      <Attention>
+        <Value operator="lessthan" msg="Less than Zero Error">0</Value>
+        <Value operator="equalto" msg=""></Value>
+        <Value operator="greaterthan" msg="Greater than 100 Error">100</Value>
+      </Attention>
+    </Dial190>
+    <Dial190>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>Zfrt</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Minimum>0</Minimum>
+      <Maximum>100</Maximum>
+      <ErrorProc></ErrorProc>
+      <ErrorArgs></ErrorArgs>
+      <Attention>
+        <Value operator="lessthan" msg="Less than Zero Error">0</Value>
+        <Value operator="equalto" msg=""></Value>
+        <Value operator="greaterthan" msg="Greater than 100 Error">100</Value>
+      </Attention>
+    </Dial190>
+  </MDI>
+  <MDI type="STATUS">
+    <Status>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>execution</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Values>
+        <Stat1>ACTIVE</Stat1>
+        <Stat2>READY</Stat2>
+        <Stat3></Stat3>
+        <Stat4>STOPPED</Stat4>
+        <Stat5></Stat5>
+        <Stat6>INTERRUPTED</Stat6>
+      </Values>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+      <Attention>
+        <Value operator="lessthan" msg=""></Value>
+        <Value operator="equalto" msg=""></Value>
+        <Value operator="greaterthan" msg=""></Value>
+      </Attention>
+    </Status>
+    <Status>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>estop</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Values>
+        <Stat1>ARMED</Stat1>
+        <Stat2></Stat2>
+        <Stat3></Stat3>
+        <Stat4></Stat4>
+        <Stat5></Stat5>
+        <Stat6></Stat6>
+      </Values>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+      <Attention>
+        <Value operator="lessthan" msg=""></Value>
+        <Value operator="equalto" msg=""></Value>
+        <Value operator="greaterthan" msg=""></Value>
+      </Attention>
+    </Status>
+    <Status>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>power</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Values>
+        <Stat1>ON</Stat1>
+        <Stat2></Stat2>
+        <Stat3></Stat3>
+        <Stat4></Stat4>
+        <Stat5></Stat5>
+        <Stat6>OFF</Stat6>
+      </Values>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+      <Attention>
+        <Value operator="lessthan" msg=""></Value>
+        <Value operator="equalto" msg=""></Value>
+        <Value operator="greaterthan" msg=""></Value>
+      </Attention>
+    </Status>
+    <Status>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>mode</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Values>
+        <Stat1>AUTOMATIC</Stat1>
+        <Stat2></Stat2>
+        <Stat3>MANUAL_DATA_INPUT</Stat3>
+        <Stat4></Stat4>
+        <Stat5>MANUAL</Stat5>
+        <Stat6></Stat6>
+      </Values>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+      <Attention>
+        <Value operator="lessthan" msg=""></Value>
+        <Value operator="equalto" msg=""></Value>
+        <Value operator="greaterthan" msg=""></Value>
+      </Attention>
+    </Status>
+  </MDI>
+  <MDI type="OEE">
+	<OEE>
+      <Data>
+        <Base></Base>
+        <Table></Table>
+        <User></User>
+        <Password></Password>
+      </Data>
+	  <WorkCenterNumber>90</WorkCenterNumber>
+	  <WorkCenterName></WorkCenterName>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+	</OEE>
+	<OEE>
+      <Data>
+        <Base></Base>
+        <Table></Table>
+        <User></User>
+        <Password></Password>
+      </Data>
+	  <WorkCenterNumber>91</WorkCenterNumber>
+	  <WorkCenterName></WorkCenterName>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+	</OEE>
+	<OEE>
+      <Data>
+        <Base></Base>
+        <Table></Table>
+        <User></User>
+        <Password></Password>
+      </Data>
+	  <WorkCenterNumber>92</WorkCenterNumber>
+	  <WorkCenterName></WorkCenterName>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+	</OEE>
+	<OEE>
+      <Data>
+        <Base></Base>
+        <Table></Table>
+        <User></User>
+        <Password></Password>
+      </Data>
+	  <WorkCenterNumber>93</WorkCenterNumber>
+	  <WorkCenterName></WorkCenterName>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+	</OEE>
+	<OEE>
+      <Data>
+        <Base></Base>
+        <Table></Table>
+        <User></User>
+        <Password></Password>
+      </Data>
+	  <WorkCenterNumber>94</WorkCenterNumber>
+	  <WorkCenterName></WorkCenterName>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+	</OEE>
+	<OEE>
+      <Data>
+        <Base></Base>
+        <Table></Table>
+        <User></User>
+        <Password></Password>
+      </Data>
+	  <WorkCenterNumber>95</WorkCenterNumber>
+	  <WorkCenterName></WorkCenterName>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+	</OEE>
+	<OEE>
+      <Data>
+        <Base></Base>
+        <Table></Table>
+        <User></User>
+        <Password></Password>
+      </Data>
+	  <WorkCenterNumber>96</WorkCenterNumber>
+	  <WorkCenterName></WorkCenterName>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+	</OEE>
+	<OEE>
+      <Data>
+        <Base></Base>
+        <Table></Table>
+        <User></User>
+        <Password></Password>
+      </Data>
+	  <WorkCenterNumber>97</WorkCenterNumber>
+	  <WorkCenterName></WorkCenterName>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+	</OEE>
+	<OEE>
+      <Data>
+        <Base></Base>
+        <Table></Table>
+        <User></User>
+        <Password></Password>
+      </Data>
+	  <WorkCenterNumber>98</WorkCenterNumber>
+	  <WorkCenterName></WorkCenterName>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+	</OEE>
+	<OEE>
+      <Data>
+        <Base></Base>
+        <Table></Table>
+        <User></User>
+        <Password></Password>
+      </Data>
+	  <WorkCenterNumber>99</WorkCenterNumber>
+	  <WorkCenterName></WorkCenterName>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+	</OEE>
+	<OEE>
+      <Data>
+        <Base></Base>
+        <Table></Table>
+        <User></User>
+        <Password></Password>
+      </Data>
+	  <WorkCenterNumber>100</WorkCenterNumber>
+	  <WorkCenterName></WorkCenterName>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+	</OEE>
+	<OEE>
+      <Data>
+        <Base></Base>
+        <Table></Table>
+        <User></User>
+        <Password></Password>
+      </Data>
+	  <WorkCenterNumber>102</WorkCenterNumber>
+	  <WorkCenterName></WorkCenterName>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+	</OEE>
+	<OEE>
+      <Data>
+        <Base></Base>
+        <Table></Table>
+        <User></User>
+        <Password></Password>
+      </Data>
+	  <WorkCenterNumber>103</WorkCenterNumber>
+	  <WorkCenterName></WorkCenterName>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+	</OEE>
+	<OEE>
+      <Data>
+        <Base></Base>
+        <Table></Table>
+        <User></User>
+        <Password></Password>
+      </Data>
+	  <WorkCenterNumber>105</WorkCenterNumber>
+	  <WorkCenterName></WorkCenterName>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+	</OEE>
+	<OEE>
+      <Data>
+        <Base></Base>
+        <Table></Table>
+        <User></User>
+        <Password></Password>
+      </Data>
+	  <WorkCenterNumber>106</WorkCenterNumber>
+	  <WorkCenterName></WorkCenterName>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+	</OEE>
+  </MDI>
+  <MDI type="STATUS">
+    <Status>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>coolant_levels</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Values>
+        <Stat1>Normal</Stat1>
+        <Stat2></Stat2>
+        <Stat3></Stat3>
+        <Stat4></Stat4>
+        <Stat5>Warning</Stat5>
+        <Stat6>Fault</Stat6>
+      </Values>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+      <Attention>
+        <Value operator="lessthan" msg=""></Value>
+        <Value operator="equalto" msg=""></Value>
+        <Value operator="greaterthan" msg=""></Value>
+      </Attention>
+    </Status>
+    <Status>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>coolant_temps</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Values>
+        <Stat1>Normal</Stat1>
+        <Stat2></Stat2>
+        <Stat3></Stat3>
+        <Stat4></Stat4>
+        <Stat5>Warning</Stat5>
+        <Stat6>Fault</Stat6>
+      </Values>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+      <Attention>
+        <Value operator="lessthan" msg=""></Value>
+        <Value operator="equalto" msg=""></Value>
+        <Value operator="greaterthan" msg=""></Value>
+      </Attention>
+    </Status>
+    <Status>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>electric_temps</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Values>
+        <Stat1>Normal</Stat1>
+        <Stat2></Stat2>
+        <Stat3></Stat3>
+        <Stat4></Stat4>
+        <Stat5>Warning</Stat5>
+        <Stat6>Fault</Stat6>
+      </Values>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+      <Attention>
+        <Value operator="lessthan" msg=""></Value>
+        <Value operator="equalto" msg=""></Value>
+        <Value operator="greaterthan" msg=""></Value>
+      </Attention>
+    </Status>
+    <Status>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>hydra_conds</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Values>
+        <Stat1>Normal</Stat1>
+        <Stat2></Stat2>
+        <Stat3></Stat3>
+        <Stat4></Stat4>
+        <Stat5>Warning</Stat5>
+        <Stat6>Fault</Stat6>
+      </Values>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+      <Attention>
+        <Value operator="lessthan" msg=""></Value>
+        <Value operator="equalto" msg=""></Value>
+        <Value operator="greaterthan" msg=""></Value>
+      </Attention>
+    </Status>
+    <Status>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>motion_conds</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Values>
+        <Stat1>Normal</Stat1>
+        <Stat2></Stat2>
+        <Stat3></Stat3>
+        <Stat4></Stat4>
+        <Stat5>Warning</Stat5>
+        <Stat6>Fault</Stat6>
+      </Values>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+      <Attention>
+        <Value operator="lessthan" msg=""></Value>
+        <Value operator="equalto" msg=""></Value>
+        <Value operator="greaterthan" msg=""></Value>
+      </Attention>
+    </Status>
+    <Status>
+      <Data>
+        <Base>\\server\SHARE\Systems Database\MTConnect\MTConnect.mdb</Base>
+        <Table>MC1:MTConnect</Table>
+        <Column>pneu_conds</Column>
+        <User></User>
+        <Password></Password>
+      </Data>
+      <Values>
+        <Stat1>Normal</Stat1>
+        <Stat2></Stat2>
+        <Stat3></Stat3>
+        <Stat4></Stat4>
+        <Stat5>Warning</Stat5>
+        <Stat6>Fault</Stat6>
+      </Values>
+      <TextColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </TextColor>
+      <Attention>
+        <Value operator="lessthan" msg=""></Value>
+        <Value operator="equalto" msg=""></Value>
+        <Value operator="greaterthan" msg=""></Value>
+      </Attention>
+    </Status>
+  </MDI>
+</Dashboard>

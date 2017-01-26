@@ -1,0 +1,1 @@
+1/26/2017 12:41:40 PM - (ApplicationEvents)[rssReadCallback]	An exception occurred during the operation, making the result invalid.  Check InnerException for exception details.

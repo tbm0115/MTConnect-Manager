@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Dashboard>
+  <MDI type="GRAPH">
+    <Series>
+      <Data>
+        <Base>{Database FilePath}</Base>
+        <Table>{Table Name}</Table>
+        <Column>{Column}</Column>
+		<User>[Username]</User>
+		<Password>[Password]</Password>
+      </Data>
+    </Series>
+  </MDI>
+  <MDI type="DIAL190">
+    <Dial190>
+      <Data>
+        <Base>{Database FilePath}</Base>
+        <Table>{Table Name}</Table>
+        <Column>{Column}</Column>
+		<User>[Username]</User>
+		<Password>[Password]</Password>
+      </Data>
+      <Minimum>[Minimum Allowed Value]</Minimum>
+      <Maximum>[Maximum Allowed Value]</Maximum>
+      <ErrorProc>[Error Execution FilePath]</ErrorProc>
+      <ErrorArgs>
+		<Argument>[Error File Argument]</Argument>
+		<Argument>[Error File Argument]</Argument>
+	  </ErrorArgs>
+      <Attention>
+        <Value operator="lessthan" msg="[Less Than Attention Message]">[Less Than Attention Value]</Value>
+        <Value operator="equalto" msg="[Equal To Attention Message]">[Equal To Attention Message]</Value>
+        <Value operator="greaterthan" msg="[Greater Than Attention Message]">[Greater Than Attention Message]</Value>
+      </Attention>
+    </Dial190>
+  </MDI>
+  <MDI type="STATUS">
+    <Status>
+      <Data>
+        <Base>{Database FilePath}</Base>
+        <Table>{Table Name}</Table>
+        <Column>{Column}</Column>
+		<User>[Username]</User>
+		<Password>[Password]</Password>
+      </Data>
+      <Values>
+        <Stat1>[Green Status Value]</Stat1>
+        <Stat2>[Cyan Status Value]</Stat2>
+        <Stat3>[Blue Status Value]</Stat3>
+        <Stat4>[Violet Status Value]</Stat4>
+        <Stat5>[Yellow Status Value]</Stat5>
+        <Stat6>[Red Status Value]</Stat6>
+      </Values>
+      <TextColor>
+        <R>[Argb Red]</R>
+        <G>[Argb Green]</G>
+        <B>[Argb Blue]</B>
+      </TextColor>
+      <Attention>
+        <Value operator="lessthan" msg="[Less Than Attention Message]">[Less Than Attention Value]</Value>
+        <Value operator="equalto" msg="[Equal To Attention Message]">[Equal To Attention Message]</Value>
+        <Value operator="greaterthan" msg="[Greater Than Attention Message]">[Greater Than Attention Message]</Value>
+      </Attention>
+    </Status>
+  </MDI>
+</Dashboard>
